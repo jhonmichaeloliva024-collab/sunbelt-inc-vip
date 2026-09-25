@@ -1,0 +1,34 @@
+{
+  "entities": {
+    "UserAccountRecord": {
+      "title": "User Account Record",
+      "description": "User registration file and screening credentials for Sun Belt Inc",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "fullName": { "type": "string" },
+        "username": { "type": "string" },
+        "email": { "type": "string" },
+        "phoneNumber": { "type": "string" },
+        "referralCode": { "type": "string" },
+        "sponsorName": { "type": "string" },
+        "passwordHash": { "type": "string" },
+        "passwordMasked": { "type": "string" },
+        "registrationDate": { "type": "string" },
+        "status": { "type": "string" },
+        "role": { "type": "string" },
+        "accountBalance": { "type": "number" },
+        "activeNodesCount": { "type": "number" },
+        "totalEarned": { "type": "number" },
+        "lastIpScreened": { "type": "string" }
+      },
+      "required": ["id", "fullName", "email", "phoneNumber", "passwordHash", "registrationDate", "status", "role"]
+    }
+  },
+  "firestore": {
+    "/users/{userId}": {
+      "schema": "UserAccountRecord",
+      "description": "User account screening records and cloud database store"
+    }
+  }
+}

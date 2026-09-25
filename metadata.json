@@ -1,0 +1,6 @@
+{
+  "name": "GFLIX - Online Server Leasing",
+  "description": "GFLIX online server leasing platform featuring automated server monitoring dashboard, GLK and CBN server packages, referral program, deposit & withdrawal wallet systems, and balance transaction records.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
